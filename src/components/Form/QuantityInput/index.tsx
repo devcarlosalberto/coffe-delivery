@@ -22,11 +22,11 @@ export function QuantityInput({
 
   return (
     <QuantityInputContainer>
-      <button onClick={handleDecreaseQuantity}>
+      <button data-testid="decrease" onClick={handleDecreaseQuantity}>
         <Minus size={14} weight="bold" />
       </button>
-      <input type="text" value={quantity} readOnly />
-      <button onClick={handleIncreaseQuantity}>
+      <input name="quantity" type="text" value={quantity} readOnly />
+      <button data-testid="increase" onClick={handleIncreaseQuantity}>
         <Plus size={14} weight="bold" />
       </button>
     </QuantityInputContainer>
