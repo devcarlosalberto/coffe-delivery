@@ -1,6 +1,6 @@
 import { ReactNode, createContext, useState } from 'react'
 
-interface Product {
+export interface Product {
   id: number
   title: string
   description: string
@@ -10,7 +10,7 @@ interface Product {
   quantity: number
 }
 
-interface AddressShipping {
+export interface AddressShipping {
   street: string
   number: string
   city: string
@@ -20,7 +20,7 @@ interface AddressShipping {
   zipcode: string
 }
 
-type PaymentMethods = 'credit' | 'debit' | 'dinner'
+export type PaymentMethods = 'credit' | 'debit' | 'dinner'
 
 interface CartContextProps {
   order: Product[]
