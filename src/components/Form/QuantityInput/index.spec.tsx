@@ -8,7 +8,7 @@ import { defaultTheme } from '../../../styles/themes/defaultTheme'
 const onIncreaseQuantityCallback = vi.fn()
 const onDecreaseQuantityCallback = vi.fn()
 
-describe('QuantityInput', () => {
+describe('Form/QuantityInput', () => {
   beforeEach(() => {
     onIncreaseQuantityCallback.mockClear()
     onDecreaseQuantityCallback.mockClear()
